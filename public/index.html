@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>ChatBot App</title>
+</head>
+<body>
+    <div class="join-container">
+        <header class= "join-header">
+            <h1><i class = "fas fa-smile"></i>ChatBot</h1>
+        </header>
+        <main class = "join-main">
+            <form action="chat" method="post">
+            <!-- <form method="post"> -->
+                <div  class ="form-control">
+
+
+                    <label for = "username">Username</label>
+                    <!-- <br>
+                    <p style="display:none" class="errorMessage"; >Username has already been taken, Kindly chose another name</p> -->
+                    <input type="text" name="username" id="username" placeholder="Enter username" required/>
+                    
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name = "room" id = "room">
+                        <option value="rajouri">rajouri</option>
+                        <option value="dwarka">dwarka</option>
+                        <option value="paschimvihar">paschimvihar</option>
+                        <option value="janakpuri">janakpuri</option>
+                        <option value="uttam">uttam</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="securityCode">Security Code</label>
+                    <input type="password" name="securityCode" if="securityCode" placeholder="Enter the Security Code"/>
+                </div>
+                <button type="submit" class = "btn">Join Room</button>
+            </form>
+
+        </main>
+    </div>
+    
+    
+</body>
+</html>

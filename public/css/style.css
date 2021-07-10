@@ -1,0 +1,361 @@
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--light-color);
+	margin: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration:none;
+}
+
+.btn{
+    cursor: pointer; 
+    padding: 5px 15px;
+}
+/* #files {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+} */
+/* .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+.file-upload{
+
+    height:55px;
+    width:55px;
+    border-radius: 100px;
+    position:relative;
+    
+    display:flex;
+    justify-content:center;
+    align-items: center;  
+	padding-right: 5px;
+	margin-right: 5px;
+    border:4px solid #FFFFFF;
+    overflow:hidden;
+    background-image: linear-gradient(to bottom, #2590EB 50%, #FFFFFF 50%);
+    background-size: 10% 20%;
+    transition: all 1s;
+    color: #FFFFFF;
+    font-size:100px;
+}
+.wrapper .file-upload input[type=file] {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+  } */
+    /* input[type='file']{
+
+      height:200px;
+      width:200px;
+      position:absolute;
+	  padding-right: 5px;
+      cursor:pointer;
+
+    } */
+.video-btn{
+    cursor: pointer; 
+    padding: 5px 15px;
+}
+.user_btn{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	display: block;
+	color: #fff;
+}
+.join-container{
+    max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header{
+    text-align: center;
+    padding: 20px;
+    background: var(--dark-color-a);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.join-main{
+    padding: 30px 40px;
+    background: var(--dark-color-b);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control{
+    margin-bottom: 20px;
+}
+
+.join-main label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.join-main input[type='text']{
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.join-main input[type='password']{
+	font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.join-main select{
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.join-main .btn{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.chat-container{
+    max-width: 1100pxs;
+    background: #fff;
+    margin: 30px auto;
+    overflow: hidden;
+    
+}
+.chat-header{
+    background:  var(--dark-color-a);
+    color: #fff;
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+.chat-sidebar {
+	background: var(--dark-color-b);
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+.chat-sidebar h2 {
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+/* .chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+	max-width: 40%;
+
+	
+} */
+.chat-messages .right {
+	padding: 10px;
+	margin-bottom: 15px;
+	/* background-color: var(--light-color); */
+	border-radius: 5px;
+	overflow-wrap: break-word;
+	max-width: 40%;
+	background-color: lightgreen;
+	margin-left: auto;
+
+	
+}
+.chat-messages .left {
+	padding: 10px;
+	margin-bottom: 15px;
+	/* background-color: var(--light-color); */
+	border-radius: 5px;
+	overflow-wrap: break-word;
+	max-width: 40%;
+	background-color: var(--light-color);
+	margin-right: auto;
+
+	
+}
+/* #right{
+	background-color: lightgreen;
+	margin-left: auto;
+
+}
+#left{
+	background-color: var(--light-color);
+	margin-right: auto;
+
+} */
+/* .chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+} */
+
+.chat-messages .left .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .left .meta span {
+	color: #777;
+}
+
+.chat-messages .right .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .right .meta span {
+	color: #777;
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	background-color: var(--dark-color-a);
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+.context-menu {
+	position: absolute;
+	text-align: center;
+	background: lightgray;
+	border: 1px solid black;
+}
+
+.context-menu ul {
+	padding: 0px;
+	margin: 0px;
+	min-width: 150px;
+	list-style: none;
+}
+
+.context-menu ul li {
+	padding-bottom: 7px;
+	padding-top: 7px;
+	border: 1px solid black;
+}
+
+.context-menu ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+.context-menu ul li:hover {
+	background: darkgray;
+}
+
+
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .wrapper .file-upload {
+	height: 55px;
+	width: 55px;
+	border-radius: 100px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 4px solid #FFFFFF;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom, #2590EB 50%, #FFFFFF 50%);
+	background-size: 100% 200%;
+	transition: all 1s;
+	color: #FFFFFF;
+	font-size: 20px;
+  }
+  .wrapper .file-upload input[type=file] {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+  }
+  .wrapper .file-upload:hover {
+	background-position: 0 -100%;
+	color: #2590EB;
+  }

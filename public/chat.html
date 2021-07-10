@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
+    <title>Chat Window</title>
+</head>
+<body>
+    <div class="chat-container" id="chat-body">
+        <header class="chat-header">
+
+            <h1><i class= "fas fa-smile"></i>ChatBot</h1>
+            <Button class="video-btn" onclick="startVideoCall()">Join Call</Button>
+            <Button class="video-btn" onclick="stopVideoCall()">Leave Call</Button>
+            <a href="./index.html" id ="leave-btn" class = "btn" onclick= "leaveRoom()">Leave Room</a>
+            
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3><i class="fas fa-comments"></i>Room Name:</h3>
+                <h2 id="room-name"></h2>
+                <h3><i class="fas fa-comments"></i>Users</h3>
+                <ul id="users"></ul>
+            </div>
+            <div class="chat-messages"></div>
+        </main>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <!-- <div class="wrapper">
+                    <input type="file" class = "file-upload" id="files" accept="image/*" />
+                    <i class="fa fa-arrow-up"></i>
+                </div> -->
+                <div class="wrapper">
+                    <div class="file-upload">
+                      <input type="file" />
+                      <i class="fa fa-arrow-up"></i>
+                    </div>
+                  </div>
+                <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off"/>
+                
+                <button class="btn"><i class="fas fa-paper-plane"></i>Send</button>
+            </form>
+        </div>
+
+    </div>
+    <div id="contextMenu" class="context-menu" 
+        style="display:none">
+        <ul>
+            <li><a href="#" id="remove" onclick="removeFromChat()">Remove</a></li>
+            <li><a href="#" id ="admin">Make Admin</a></li>
+
+        </ul>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
